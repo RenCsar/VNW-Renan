@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --branco-texto: rgba(255, 255, 255, 0.87);
+  --preto-bg: #242424;
+
+  --color-primary: var(--branco-texto);
+  --bg-body: var(--preto-bg);
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--color-primary);
+}
