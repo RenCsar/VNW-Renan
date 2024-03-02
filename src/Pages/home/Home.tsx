@@ -1,4 +1,4 @@
-import Contador from "../../Components/Contador/Contador";
+import Contador from "../../components/Contador/Contador";
 import { Container } from "./Home.Styled";
 
 const Home = () => {
