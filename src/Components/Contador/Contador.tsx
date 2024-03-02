@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contador = () => {
     const [time, setTime] = useState<string>();
 
-    function updateCountdown() {
+    const updateCountdown = () => {
         const date = new Date();
         let year = date.getFullYear();
         const christmasDate = new Date(`March 31, ${year} 00:00:00`).getTime();
@@ -21,6 +21,10 @@ const Contador = () => {
             setTime('Veio no código ver o que vai acontecer, né? Se farei o último commit próximo ao fim do contador hahahaha!!');
         }
     }
+
+    useEffect(() => {
+        updateCountdown();
+    }, []);
 
     setInterval(updateCountdown, 1000);
 
